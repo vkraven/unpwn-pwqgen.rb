@@ -30,8 +30,8 @@ Total:  100.0% accurate.
 Let the inputs used to create Unpwn be called 'unpwn-input-left' and 'unpwn-input-right', where a pwqgen.rb-like output is emulated by taking any one member of unpwn-input-left and concatenating it with any one member of unpwn-input-right. 
 E.g. 'Aey+' is a member of unpwn-input-left, and 'Bee$cee' a member of unpwn-input-right.
 
-1. 	If every legal result of calling "pwqgen.rb" (i.e. with the default of 3) is such that:
-	Split at the first seperator: 
+1. 	If every legal result of calling "pwqgen.rb" (i.e. with the default of 3) is such that,
+	split at the first seperator: 
 	- the Left side == some x where x is a member of unpwn-input-left; and
 	- the Right side == some x where x is a member of unpwn-input-right
 
@@ -51,7 +51,7 @@ E.g. 'Aey+' is a member of unpwn-input-left, and 'Bee$cee' a member of unpwn-inp
 
 8.	(Assertion) Samplesize is large enough and the outcome of parser.py definitive enough.
 
-**Therefore**, Unpwn is reasonably accurate in emulating pwqgen.rb, and can be reasonably relied upon to eliminate randomly-generated pwned passwords from actual uses of pwqgen.rb.
+**Therefore**, Unpwn is reasonably accurate in emulating pwqgen.rb, and can be reasonably relied upon to eliminate randomly-generated, but already pwned passwords during actual uses of pwqgen.rb.
 
 ## Comments
 
