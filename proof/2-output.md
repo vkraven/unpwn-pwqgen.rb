@@ -1,5 +1,5 @@
-#Completion of Proof
-##Output of parser.py
+# Completion of Proof
+## Output of parser.py
 ```
 $	python -i parser.py
 Parsing the 400 000 output from pwqgen.rb
@@ -24,7 +24,7 @@ Total:  100.0% accurate.
 >>> len(negright)
 0
 ```
-##Reasoning
+## Reasoning
 **Proof: that the refined combinatorial datasets used in generating Unpwn accurately emulate actual output from pwqgen.rb**
 
 Let the inputs used to create Unpwn be called 'unpwn-input-left' and 'unpwn-input-right', where a pwqgen.rb-like output is emulated by taking any one member of unpwn-input-left and concatenating it with any one member of unpwn-input-right. 
@@ -53,7 +53,7 @@ E.g. 'Aey+' is a member of unpwn-input-left, and 'Bee$cee' a member of unpwn-inp
 
 **Therefore**, Unpwn is reasonably accurate in emulating pwqgen.rb, and can be reasonably relied upon to eliminate randomly-generated pwned passwords from actual uses of pwqgen.rb.
 
-##Comments
+## Comments
 
 As noted, this is an extension proof of accuracy of the datasets used in generating Unpwn, and like any inductive system, requires you to take on faith premises 6, 7 and 8. I would have very much preferred to produce an intentional proof of accuracy (in other words, actually generating every possible output of pwqgen.rb, like I did for "pwqgen.rb 1" and "pwqgen.rb 2"), but I ran out of both memory and disk space for that. This is not to mention that it would have taken so much time to hash through them all on my system anyways. As a result of these pragmatic limitations, I used this limited and refined dataset to prepare Unpwn (even so, it took me a week of SLI hashing to produce!). I propose that this extensional proof is sufficient for practical purposes.
 
